@@ -16,5 +16,5 @@ training:
 dataset: 'TTT'
 
 bound:
-  name: "dirichlet_tightest"
+  name: "dirichlet"
   delta: 0.05

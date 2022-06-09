@@ -19,4 +19,11 @@ Default configuration are stored in 'config/real.yaml'.
 python3 real_margin.py dataset=MNIST num_trials=1 training.gamma=0.01
 ```
 
-Default configuration are stored in 'config/grid_search.yaml'. 
+Default configuration are stored in 'config/grid_search.yaml'.
+
+#### To reproduce the results of the paper run
+ 
+```bash
+bash PACB.sh
+bash margin.sh
+```
