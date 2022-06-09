@@ -1,0 +1,20 @@
+num_trials: 5
+
+model:
+  base: "FO"
+  M: 10 # number of predictors, if stumps: 2*M per dimension
+  prior: 1 # param of the Dirichlet prior
+  pred: "rf" # random forest or "stumps-uniform"
+  bootstrap: 0.5 # for informed priors
+  tree_depth: None # for informed priors
+  m_prior: 0.5 # for informed priors: use first m * N_train points to learn the prior, and last (1-m) * N_train to learn the posterior
+
+training:
+  seed: 23042021
+  grid_size: 1000 # number of gamma values
+
+dataset: 'TTT'
+
+bound:
+  name: "dirichlet_tightest"
+  delta: 0.05
